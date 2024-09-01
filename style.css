@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-color: #f7f7f7;
+}
+
+/* Navigation bar */
+.navbar{
+    padding: 0.8rem;
+}
+
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.navbar-brand img{
+    width: 50px;
+}
+
+.navbar li{
+    padding: 0px 10px;
+}
+
+.navbar li a{
+    font-weight: 600;
+}
+
+.navbar li a:hover{
+    text-decoration:2px solid underline;
+    
+}
+
+/* Banner */
+
+.carousel-inner img{
+    width: 100%;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1{
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px rgb(103, 255, 240);
+}
+
+.carousel-caption h3{
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 1px 1px 8px rgb(223, 226, 226);
+    padding-bottom:1rem ;
+}
+
+.jumbotron{
+    padding: 1rem;
+    border-radius: 0%;
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+
+/* Welcome Section */
+.welcome{
+    width: 75%;
+    margin: 0px auto;
+    padding-top:2rem ;
+}
+
+.welcome hr{
+    width: 95%;
+    border: 1px solid rgb(85, 85, 85);
+    margin-top: 1.5rem;
+}
+
+/* Services */
+.fa-html5, .fa-code, .fa-palette, .fa-copyright, .fa-funnel-dollar, .fa-chalkboard-teacher{
+    color: rgb(22, 119, 216);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.cols{
+    margin-bottom: 2rem ;
+}
+
+.img-fluid{
+    border-radius: 50% 100%;
+}
+
+#fixed{
+    height: 50vh;
+    background-image: url(/img/456370.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(41, 192, 197);
+    background-blend-mode:multiply;
+}
+
+/* Gif Drop box */
+.btn-block{
+    padding: .5rem 0;
+    border: none;
+}
+
+.gif{
+    max-width: 100%;
+}
+
+/* Social */
+.social a{
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.fa-facebook{
+    color: #3b5998;
+}
+
+.fa-instagram{
+    color: #8a3ab9;
+}
+
+.fa-twitter{
+    color: #00aced;
+}
+
+.fa-telegram-plane{
+    color: #0088cc;
+}
+
+.fa-youtube{
+    color: #ff0000;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-telegram-plane:hover,
+.fa-youtube:hover{
+    transform: translateY(5px) scale(1.2) ;
+}
+ 
+/* Footer */
+footer{
+    background: rgb(61, 61, 61);
+    color: #e4e4e4;
+    padding-top: 2rem;
+}
+
+footer img{
+    width: 50px;
+}
+
+footer hr{
+    width: 75%;
+    border: 1px solid #b1b1b1;
+    margin: 1rem auto;
+}
+
+footer .light-last{
+    width: 100%;
+    border: 1px solid #b1b1b1;
+    margin: 1rem auto;
+}
+
+/* Media Quries */
+@media (max-width:768px){
+    .carousel-caption{
+        top: 45%;
+    }
+    
+    .carousel-caption h1{
+        font-size: 4rem;
+    }
+    
+    .carousel-caption h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-bottom:.7rem ;
+    }
+
+    .carousel-caption .btn{
+        font-size: 95%;
+        padding: .5rem 1.2rem ;
+    }
+}
+
+@media (max-width:576px){
+    .carousel-caption{
+        top: 40%;
+    }
+    
+    .carousel-caption h1{
+        font-size: 3rem;
+    }
+    
+    .carousel-caption h3{
+        font-size: 1rem;
+    }
+
+    .carousel-caption .btn{
+        font-size: 90%;
+        padding: .3rem 1rem ;
+    }
+
+    .welcome .display{
+        font-size: 2rem;
+    }
+
+    .welcome .lead{
+        font-size: 1rem;
+    }
+
+    .display-4{
+        font-size: 2rem;
+    }
+
+    .social a{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width:320px){
+    .carousel-caption{
+        top: 35%;
+    }
+    
+    .carousel-caption h1{
+        font-size: 2rem;
+    }
+    
+    .carousel-caption h3{
+        font-size: .8rem;
+    }
+
+    .carousel-caption .btn{
+        font-size: 80%;
+        padding: .1rem .8rem ;
+    }
+
+    .social a{
+        font-size: 1.8rem;
+        padding: .5rem;
+    }
+}
